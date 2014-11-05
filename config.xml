@@ -49,7 +49,7 @@
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
     <gap:plugin name="com.ionic.keyboard" />
     <gap:plugin name="org.apache.cordova.console"/>
-    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.device-motion" />
     <gap:plugin name="org.apache.cordova.device-motion" />
     <gap:plugin name="org.apache.cordova.geolocation" />
