@@ -1,0 +1,15 @@
+<ion-view title="Home">
+
+    <div id="map-container" class="has-header">
+        <main-map ng-init="init()"></main-map>
+    </div>
+    <div class="find-cab-btn">
+        <button class="button button-full button-calm " style="margin: 0" id="findcab-btn" ng-click="showNewTask() ">
+            Find Taxi
+        </button>
+        <button class="button button-full button-balanced" style="margin: 0; display: none" id="displaycab-btn"  ng-click="modal.show();">
+            Display Taxi Info
+        </button>
+    </div>
+
+</ion-view>

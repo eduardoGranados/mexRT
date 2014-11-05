@@ -1,0 +1,32 @@
+<ion-view title="Delete Account" style="background-image: url('img/screen.jpg'); background-position-x:50%; background-repeat: no-repeat; background-size: fixed;">
+
+<ion-header-bar class="bar-secondary bar-dark" id="subtitle">
+    <h1 class="title">Delete Account</h1>
+    <button class="button button-small button-assertive" ng-click="closeNewTask()">Cancel</button>
+</ion-header-bar>
+
+<ion-content class="padding has-header">
+
+    <ion-list show-delete="shouldShowDelete" >
+
+            <ion-item class="item-button-right" style="padding-right: 0px">
+                <div class="item item-divider">
+                    Your account will be deleted.
+                </div>
+                <div class="item item-text-wrap">
+                    Once your account is deleted all your user information will be lost.
+                </div>
+                <ion-delete-button class="ion-trash-a"
+                       ng-click="Deleteuser({{getUId()}})">
+                </ion-delete-button>
+            </ion-item> 
+            
+    </ion-list>
+
+    <ion-checkbox ng-model="shouldShowDelete">
+        I agree.
+    </ion-checkbox>
+
+</ion-content>
+</ion-view>
+

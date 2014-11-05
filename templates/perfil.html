@@ -1,0 +1,44 @@
+<ion-view title="Perfil" style="background-image: url('img/screen.jpg'); background-position-x:50%; background-repeat: no-repeat; background-size: fixed;">
+
+<ion-header-bar class="bar-secondary bar-dark" id="subtitle">
+    <h1 class="title">Profile</h1>
+    <button class="button button-small button-assertive" ng-click="closeNewTask()">Cancel</button>
+</ion-header-bar>
+
+<ion-content class="padding has-header">
+    <div class="list card">
+        <div class="item item-avatar">
+            <img src="img/user.png">
+            <label class="item item-input">
+                <span class="input-label">Name:</span>
+                <h4> {{getUName()}}</h4>
+            </label>
+        </div>
+
+        <div class="item item-body">
+            
+            <div class="item item-divider">
+                Email
+            </div> 
+            <label class="item item-input">
+                {{getToken()}}
+            </label>
+
+            <div class="item item-divider">
+                Phone
+            </div> 
+            <label class="item item-input">
+                {{getUphone()}}
+            </label>
+
+            <button ng-click="goState('home.edit-perfil')" class="button icon-left ion-edit button-calm" style="width: 100%;">
+            Edit Profile
+        </button>
+
+        <button ng-click="goState('home.delete-perfil')" class="button icon-left ion-close-circled button-assertive" style="width: 100%;">
+            Delete Profile
+        </button>
+        </div>     
+    </div>
+</ion-content>
+</ion-view>

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gmwt/!svn/ver/254/CabApp/Release/www/templates
+END
+cab-found.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gmwt/!svn/ver/253/CabApp/Release/www/templates/cab-found.html
+END
+change-password.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gmwt/!svn/ver/242/CabApp/Release/www/templates/change-password.html
+END
+sign-in.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gmwt/!svn/ver/242/CabApp/Release/www/templates/sign-in.html
+END
+rate-driver.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gmwt/!svn/ver/153/CabApp/Release/www/templates/rate-driver.html
+END
+sign-in-modal.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/gmwt/!svn/ver/242/CabApp/Release/www/templates/sign-in-modal.html
+END
+from-address.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/gmwt/!svn/ver/261/CabApp/Release/www/templates/from-address.html
+END
+find-cab.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gmwt/!svn/ver/254/CabApp/Release/www/templates/find-cab.html
+END
+perfil.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gmwt/!svn/ver/247/CabApp/Release/www/templates/perfil.html
+END
+map-template.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/gmwt/!svn/ver/155/CabApp/Release/www/templates/map-template.html
+END
+delete-account.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/gmwt/!svn/ver/242/CabApp/Release/www/templates/delete-account.html
+END
+search.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gmwt/!svn/ver/40/CabApp/Release/www/templates/search.html
+END
+edit-profile.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/gmwt/!svn/ver/242/CabApp/Release/www/templates/edit-profile.html
+END
+recover-password.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gmwt/!svn/ver/242/CabApp/Release/www/templates/recover-password.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gmwt/!svn/ver/200/CabApp/Release/www/templates/home.html
+END
+create-account-modal.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/gmwt/!svn/ver/242/CabApp/Release/www/templates/create-account-modal.html
+END
+create-account.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/gmwt/!svn/ver/242/CabApp/Release/www/templates/create-account.html
+END

@@ -1,0 +1,97 @@
+html, body { height: 100%; width: 100%; margin: 0; }
+
+
+/*MAP SECTION*/
+.ui-el{
+    display: none;
+}
+#map-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#address-container{
+    position: absolute;
+    width: 100%;
+    min-height: 10% !important;
+    color: #5a5758;
+    background-color: #ffffff;
+    font-size: 0.9em;
+    box-shadow: 0 0.26em 0.2em #888888;
+    z-index: 100;
+    -webkit-transition: 500ms; /* For Safari 3.1 to 6.0 */
+    transition:  500ms;
+}
+#canvas-container{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 83%;
+}
+#geolocation {
+    width: 100%;
+    height: 100%;
+    background-color: #aeb8bc;
+    position: relative;
+}
+#user-marker{
+    top: 40%;
+    left: 40%;
+    position: absolute;
+    height: 13%;
+    width: 20%;
+    z-index: 100;
+    background: transparent url(../img/person-pin.png) no-repeat center center;
+    background-size: contain;
+    /*display: none;*/
+}
+#subtitle
+{
+    background-color: rgba(68, 68, 68, 0.68);
+}
+.locate-btn{
+    top: 2em;
+    left: 0.5em;
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    z-index: 100;
+    background-color: #aeb8bc;
+    opacity: 0.7;
+}
+.btn-icon{
+    font-size: 2em;
+    margin: 0.25em;
+    position: absolute;
+}
+#locating{
+    color: #ff0000;
+}
+#not-locating{
+    color: #000000;
+}
+.zoom-btn{
+    left: 0.5em;
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    z-index: 100;
+    background-color: #aeb8bc;
+    opacity: 0.7;
+}
+#in-zoom{
+    top: 40%;
+}
+#out-zoom{
+    top: 50%;
+}
+
+
+/*******************************/
+
+.find-cab-btn{
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    bottom: 0;
+}

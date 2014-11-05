@@ -1,0 +1,151 @@
+<ion-view title="Edit Profile" style="background-image: url('img/screen.jpg'); background-position-x:50%; background-repeat: no-repeat; background-size: fixed;">
+
+<ion-header-bar class="bar-secondary bar-dark" id="subtitle">
+    <h1 class="title">Edit Profile</h1>
+    <button class="button button-small button-assertive" ng-click="closeNewTask()">Cancel</button>
+</ion-header-bar>
+
+<ion-content class="padding has-header">
+    <div class="list card">
+        <div class="item item-avatar">
+            <img src="img/user.png">
+            <label class="item item-input">
+                <span class="input-label">Name:</span>
+                {{getUName()}}
+            </label>
+        </div>
+
+        <div class="item item-body">
+            <form name="edit_form">
+                <div class="list list-inset">
+                    <!-- ********************************************************** -->
+                    <!-- First Name -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        First Name
+                    </div>
+                    
+                    <label class="item item-input">
+                        <input 
+                            name="first_name" 
+                            type="text" 
+                            ng-model="user.first_name" 
+                            placeholder="{{getUFName()}}" 
+                            ng-minlength=2 ng-maxlength=20 
+                        >
+                    </label>
+                    <div class="error" ng-show="edit_form.first_name.$dirty && edit_form.first_name.$invalid">
+                        <small class="error" ng-show="edit_form.first_name.$error.minlength" style="color: red;">
+                            Must have more than 2 characters.
+                        </small>
+
+                        <small class="error" ng-show="edit_form.first_name.$error.maxlength" style="color: red;">
+                            Must have less than 20 characters.
+                        </small>
+                    </div>
+
+                    <!-- ********************************************************** -->
+                    <!-- Last Name -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Last Name
+                    </div>
+
+                    <label class="item item-input">
+                        <input 
+                            name="last_name" 
+                            type="text" 
+                            ng-model="user.last_name"  
+                            placeholder="{{getULName()}}"
+                            ng-maxlength=20
+                        >
+                    </label>
+                    <div class="error" ng-show="edit_form.last_name.$dirty && edit_form.last_name.$invalid">
+                        <small class="error" ng-show="edit_form.last_name.$error.maxlength" style="color: red;">
+                            Must have less than 20 characters.
+                        </small>
+                    </div>
+
+                     
+                    <!-- ********************************************************** -->
+                    <!-- Email -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Email
+                    </div>
+
+                    <label class="item item-input">
+                        <input 
+                        name="u_email"
+                        type="email"
+                        ng-model="user.email" 
+                        placeholder="{{getToken()}}"
+                        ng-minlength=6 
+                        ng-maxlength=40 
+                        >
+                    </label>
+
+                    <div class="error" ng-show="edit_form.u_email.$dirty && edit_form.u_email.$invalid">
+                        <small class="error" ng-show="edit_form.u_email.$error.minlength" style="color: red;">
+                            Must have more than 6 characters.
+                        </small>
+      
+                        <small class="error" ng-show="edit_form.u_email.$error.email" style="color: red;">
+                            Invalid email.
+                        </small>
+      
+                        <small class="error" ng-show="edit_form.u_email.$error.maxlength" style="color: red;">
+                            Must have less than 40 characters.
+                        </small>
+                    </div>
+         
+                    <!-- ********************************************************** -->
+                    <!-- Phone -->
+                    <!-- ********************************************************** -->
+                    <div class="item item-divider">
+                        Phone
+                    </div> 
+
+                    <label class="item item-input">
+                        <input
+                        name="phone" 
+                        type="tel" 
+                        ng-model="user.phone" 
+                        placeholder="{{getUphone()}}"
+                        ng-minlength=6
+                        ng-maxlength=20 
+                        >
+                    </label>
+
+                    <div class="error" ng-show="edit_form.phone.$dirty && edit_form.phone.$invalid">
+                        <small class="error" ng-show="edit_form.phone.$error.tel" style="color: red;">
+                            Invalid Phone.
+                        </small>
+
+                        <small class="error" ng-show="edit_form.phone.$error.minlength" style="color: red;">
+                            Must have more than 6 characters.
+                        </small>
+      
+                        <small class="error" ng-show="edit_form.phone.$error.maxlength" style="color: red;">
+                            Must have less than 20 characters.
+                        </small>
+                    </div>
+
+                    <!-- ********************************************************** -->
+                    <!-- Button Edit -->
+                    <!-- ********************************************************** -->
+                    <div class="button-bar">
+                        <button class="button icon-left ion-edit button-calm" ng-click="Edituser()" type="submit">
+                            Edit
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <button class="button icon-left ion-locked button-energized" style="width: 100%;" ng-click="goState('home.change-password')" >
+                Change Password
+            </button>
+        </div>
+    </div>
+</ion-content>
+</ion-view>

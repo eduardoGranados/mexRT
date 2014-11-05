@@ -1,0 +1,35 @@
+<ion-view title="From Address" style="background-image: url('img/screen.jpg'); background-position-x:50%; background-repeat: no-repeat; background-size: fixed;">
+
+    <ion-header-bar class="bar-secondary bar-dark" id="subtitle">
+        <h1 class="title">From Address</h1>
+        <button class="button button-small button-assertive" ng-click="closeNewTask()">Cancel</button>
+    </ion-header-bar>
+
+    <ion-content class="padding has-header">
+
+        <form  >
+            <div class="list list-inset">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Street</span>
+                    <input type="text" id="current-address" style="padding:0px;" value="{{getCurrentAddress()}}">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Reference Point</span>
+                    <input id="reference-point" type="text" placeholder="Reference" >
+                </label>
+            </div>
+
+                <button ng-click="setPointOfRef()" class="button button-block button-calm">
+                    Continue
+                </button>
+
+                <button class="button icon-left ion-map button-block button-balanced" ng-click="closeNewTask()">
+                    Find on Map
+                </button>
+        </form>
+
+    </ion-content>
+
+</ion-view>
+

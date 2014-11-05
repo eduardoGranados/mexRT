@@ -1,0 +1,32 @@
+<ion-view title="Modal Content" style="background-image: url('img/screen.jpg'); background-position-x:50%; background-repeat: no-repeat; background-size: fixed;">
+    <ion-header-bar class="bar-secondary bar-dark" id="subtitle">
+        <h1 class="title">Rate Driver</h1>
+        <button class="button  button-small button-assertive" ng-click="closeNewTask()">Cancel</button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img src="img/taxi_driver.png">
+                <label class="item item-input">
+                    <span class="input-label">Driver:</span>
+                    Jack Johnson
+                </label>
+            </div>
+
+            <div class="item item-body" style="padding: 0px">
+                <div class="row">
+                    <div class="col col-center">
+                        <rating ng-model="rate" max="max" style="margin-left: auto; margin-right: auto; width: 90%; color:#f7ec14"></rating>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button ng-click="" class="button button-block button-calm">
+            Send
+        </button>
+
+    </ion-content>
+
+</ion-view>

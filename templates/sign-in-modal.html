@@ -1,0 +1,61 @@
+<ion-view title="Sign In" style="background-image: url('img/screen.jpg'); background-position-x:50%; background-repeat: no-repeat; background-size: fixed;">
+
+<ion-header-bar class="bar-secondary bar-dark" id="subtitle">
+    <h1 class="title">Sign In</h1>
+    <button class="button button-small button-assertive" ng-click="closeNewTask()">Cancel</button>
+</ion-header-bar>
+
+<ion-content class="padding has-header">
+   <form name="login_form">
+      <div class="list list-inset">
+            <!-- ********************************************************** -->
+            <!-- Username (Email) -->
+            <!-- ********************************************************** -->
+            <label class="item item-input">
+            <input 
+               name="username" 
+               type="email" 
+               ng-model="user.email" 
+               placeholder="Email"
+               require>
+         </label>
+         <div class="error" ng-show="login_form.username.$dirty && login_form.username.$invalid">
+               <small class="error" ng-show="login_form.username.$error.required" style="color: red;">
+                  Required field.
+               </small>
+
+               <small class="error" ng-show="login_form.username.$error.email" style="color: red;">
+                  Invalid.
+               </small>
+         </div>
+
+         <!-- ********************************************************** -->
+         <!-- Password -->
+         <!-- ********************************************************** -->
+         <label class="item item-input">
+            <input 
+               name="password"
+               type="password" 
+               ng-model="user.password" 
+               placeholder="Password"
+               required
+            >
+         </label>
+         <div class="error" ng-show="login_form.password.$dirty && login_form.password.$invalid">
+               <small class="error" ng-show="login_form.password.$error.required" style="color: red;">
+                  Required field.
+               </small>
+         </div>
+
+         <label class="item">
+            <button class="button button-block button-calm" ng-click="validateUser()" type="submit">Sign In</button>
+         </label>
+
+         <div class="button-bar">
+            <a ng-click="goState('home.recover-password')" class="button button-energized" style="font-size: 14px" >Recover password</a>
+            <a ng-click="goState('home.create-account')"   class="button button-balanced" style="font-size: 14px">Create account</a>
+        </div>   
+      </div>
+   </form>
+</ion-content>
+</ion-view>

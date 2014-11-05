@@ -1,1 +1,98 @@
-holamundo
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--<meta name="format-detection" content="telephone=no" />-->
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/ionic-rating.css" rel="stylesheet">
+    <link href="css/ionicons.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!--google maps for angular-->
+    <script type="text/javascript"
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB9-M1esX7KOwvO78N0RTpCIPsrqNTXP1E&libraries=places&sensor=true">
+    </script>
+    <script src='js/lodash.underscore.js'></script>
+    <!--<script src='js/angular-google-maps.js'></script>-->
+    <script src='lib/ionic-rating/ionic-rating.js'></script>
+    <!-- your jquery -->
+    <script src='lib/jquery.js'></script>
+    <!-- socket.io-->
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/gmap-directive.js"></script>
+    <script src="js/md5.js"></script>
+
+
+</head>
+
+<body ng-app="starter" animation="slide-left-right" ng-controller="HomeCtrl as main">
+
+    <ion-header-bar align-title="left" class="bar-dark">
+        <h1 class="title" style="left: 0px; right: 545px;width: 70px;">
+            <img src="img/icon.png" style="height:auto; width:auto; max-width:68px; max-height:68px;">
+        </h1>
+
+        <h2 class="title" style="text-align: left; padding-left:70px ">MexRT</h2>
+
+        <div class="buttons" id="header-buttons" style="">
+            <span ng-show="showBar" class="item-input-inset" style="padding: 0px; width:180px; z-index: 1;">
+                 <label ng-show="showBar" class="item-input-wrapper" style="background-color: #ffffff">
+                     <i class="icon ion-search placeholder-icon"></i>
+                     <input ng-model="chosenPlace" googleplace type="search" placeholder="Type your location">
+                 </label>
+            </span>
+
+            <!--<a href ng-click="showBar = !showBar" class="button button-icon icon ion-search" style="display: table-cell"></a>-->
+            <a class="button button-icon icon ion-person"  id="btn_perfil" ng-click="modal_perfil.show()" style="display: none"></a>
+            <a class="button button-icon icon ion-log-in"  id="btn_login"  ng-click="modal_menu.show()"></a>
+            <a class="button button-icon icon ion-log-out" id="btn_logout" ng-click="logout()" style="display: none"></a>
+            <!--<a class="button button-icon icon ion-home" href="#/home"></a>-->
+        </div>
+    </ion-header-bar>
+
+    <ion-nav-view></ion-nav-view>
+
+    <script id="get-from-address.html" type="text/ng-template">
+        <div class="modal" style="min-height: 90%; margin-top: 8%">
+            <ion-modal-view style="overflow:hidden">
+                <ion-nav-view name="navable-modal"></ion-nav-view>
+            </ion-modal-view>
+        </div>
+    </script>
+
+    <script id="get-menu-login.html" type="text/ng-template">
+        <div class="modal" style="min-height: 90%; margin-top: 8%">
+            <ion-modal-view style="overflow:hidden">
+                <ion-nav-view name="navable-modal-menu"></ion-nav-view>
+            </ion-modal-view>
+        </div>
+    </script>
+
+    <script id="get-menu-perfil.html" type="text/ng-template">
+        <div class="modal" style="min-height: 90%; margin-top: 8%">
+            <ion-modal-view style="overflow:hidden">
+                <ion-nav-view name="navable-modal-perfil"></ion-nav-view>
+            </ion-modal-view>
+        </div>
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<ion-view title="Create Account" style="background-image: url('img/screen.jpg'); background-position-x:50%; background-repeat: no-repeat; background-size: fixed;">
+
+<ion-header-bar class="bar-secondary bar-dark" id="subtitle">
+    <h1 class="title">Create Account</h1>
+    <button class="button button-small button-assertive" ng-click="closeNewTask()">Cancel</button>
+</ion-header-bar>
+
+<ion-content class="has-header padding">
+    <form name="signup_form">
+    <div class="list list-inset">
+            <!-- ********************************************************** -->
+        <!-- First Name -->
+        <!-- ********************************************************** -->
+        <label class="item item-input">
+          <input 
+            name="first_name" 
+            type="text" 
+            ng-model="user.first_name" 
+            placeholder="Name (*)"
+            ng-minlength=2 ng-maxlength=20 
+            required
+          >
+        </label>
+        <div class="error" ng-show="signup_form.first_name.$dirty && signup_form.first_name.$invalid">
+            <small class="error" ng-show="signup_form.first_name.$error.required" style="color: red;">
+                Required.
+            </small>
+
+            <small class="error" ng-show="signup_form.first_name.$error.minlength" style="color: red;">
+                Must have more than 2 characters..
+            </small>
+
+            <small class="error" ng-show="signup_form.first_name.$error.maxlength" style="color: red;">
+                Must have less than 20 characters.
+            </small>
+        </div>
+
+        <!-- ********************************************************** -->
+        <!-- Last Name -->
+        <!-- ********************************************************** -->
+        <label class="item item-input">
+          <input 
+            name="last_name" 
+            type="text" 
+            ng-model="user.last_name"  
+            placeholder="Last Name"
+            ng-maxlength=20
+          >
+        </label>
+        <div class="error" ng-show="signup_form.last_name.$dirty && signup_form.last_name.$invalid">
+            <small class="error" ng-show="signup_form.last_name.$error.maxlength" style="color: red;">
+                Must have less than 20 characters.
+            </small>
+        </div>
+
+        <!-- ********************************************************** -->
+        <!-- Email -->
+        <!-- ********************************************************** -->
+        <label class="item item-input">
+          <input 
+            name="d_email"
+            type="email"
+            ng-model="user.email" 
+            placeholder="Email (*)"
+            ng-minlength=6 
+            ng-maxlength=40
+            required
+          >
+        </label>
+        <div class="error" ng-show="signup_form.d_email.$dirty && signup_form.d_email.$invalid">
+            <small class="error" ng-show="signup_form.d_email.$error.required" style="color: red;">
+                Required.
+            </small>
+
+            <small class="error" ng-show="signup_form.d_email.$error.minlength" style="color: red;">
+                Must have more than 6 characters.
+            </small>
+      
+            <small class="error" ng-show="signup_form.d_email.$error.email" style="color: red;">
+                Invalid email.
+            </small>
+      
+            <small class="error" ng-show="signup_form.d_email.$error.maxlength" style="color: red;">
+                Must have less than 40 characters..
+            </small>
+        </div>
+
+        <!-- ********************************************************** -->
+        <!-- Phone -->
+        <!-- ********************************************************** -->
+        <label class="item item-input">
+          <input
+            name="phone" 
+            type="tel" 
+            ng-model="user.phone" 
+            placeholder="Phone (*)"
+            ng-maxlength=20
+            required
+          >
+        </label>
+        <div class="error" ng-show="signup_form.phone.$dirty && signup_form.phone.$invalid">
+            <small class="error" ng-show="signup_form.phone.$error.required" style="color: red;">
+                Required.
+            </small>
+
+            <small class="error" ng-show="signup_form.phone.$error.tel" style="color: red;">
+                Invalid.
+            </small>
+      
+            <small class="error" ng-show="signup_form.phone.$error.maxlength" style="color: red;">
+                Must have less than 20 characters.
+            </small>
+        </div>
+
+
+        <!-- ********************************************************** -->
+        <!-- Password -->
+        <!-- ********************************************************** -->
+        <label class="item item-input">
+          <input 
+            name="pwd1" 
+            type="password" 
+            ng-model="user.password1" 
+            placeholder="Password (*)"
+            ng-minlength=5
+            ng-maxlength=20 
+            required
+          >
+        </label>
+        <div class="error" ng-show="signup_form.pwd1.$dirty && signup_form.pwd1.$invalid">
+            <small class="error" ng-show="signup_form.pwd1.$error.minlength" style="color: red;">
+                Must have a minimum of 5 characters.
+            </small>
+      
+            <small class="error" ng-show="signup_form.pwd1.$error.required" style="color: red;">
+                Required.
+            </small>
+      
+            <small class="error" ng-show="signup_form.pwd1.$error.maxlength" style="color: red;">
+                Must have less than 20 characters.
+            </small>
+        </div>
+
+        <!-- ********************************************************** -->
+        <!-- Re-Password -->
+        <!-- ********************************************************** -->
+        <label class="item item-input">
+          <input 
+            name="pwd2" 
+            type="password" 
+            ng-model="user.password2" 
+            placeholder="Confirm Password (*)"
+            ng-minlength=5
+            ng-maxlength=20 
+            required
+          >
+        </label>
+        <div class="error" ng-show="signup_form.pwd2.$dirty && signup_form.pwd2.$invalid">
+            <small class="error" ng-show="signup_form.pwd2.$error.minlength" style="color: red;">
+                Must have a minimum of 5 characters.
+            </small>
+      
+            <small class="error" ng-show="signup_form.pwd2.$error.required" style="color: red;">
+                Required.
+            </small>
+      
+            <small class="error" ng-show="signup_form.pwd2.$error.maxlength" style="color: red;">
+                Must have less than 20 characters.
+            </small>
+        </div>
+        
+        <div class="button-bar">
+            <button class="button button-block button-calm" ng-click="createUser()" type="submit">
+               Create
+            </button>
+        </div>
+
+        <p> Required Fields (*)...</p>
+    </div>
+    </form>
+    
+</ion-content>
+</ion-view>

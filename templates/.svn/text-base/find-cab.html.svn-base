@@ -1,0 +1,20 @@
+<ion-view title="Modal Content" style="background-image: url('img/screen.jpg'); background-position-x:50%; background-repeat: no-repeat; background-size: fixed;">
+    <ion-header-bar class="bar-secondary bar-dark" id="subtitle">
+        <h1 class="title">Finding Cab</h1>
+        <button class="button  button-small button-assertive" ng-click="cancelFindTaxi()">Cancel</button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="item item-avatar">
+            <img src="img/taxi_driver.png">
+            <h4 style="">Please wait while we find a cab near you...</h4>
+        </div>
+    <img ng-src="img/ajax-loader.gif" style="margin-right: auto; margin-left: auto; display: block; margin-top: 10%; margin-bottom: 10%"/>
+        <button ng-click="cancelFindTaxi()" class="button button-block button-assertive">
+            Cancel
+        </button>
+        <!--<button ng-click="goState('home.cab-found')" class="button button-block button--quiet">-->
+            <!--Next-->
+        <!--</button>-->
+    </ion-content>
+
+</ion-view>

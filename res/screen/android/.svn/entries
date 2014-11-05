@@ -1,0 +1,134 @@
+10
+
+dir
+259
+http://groupmwt.com/svn/gmwt/CabApp/Release/www/res/screen/android
+http://groupmwt.com/svn/gmwt
+
+
+
+2014-11-04T14:33:36.798002Z
+242
+gcabrera
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+f36fb81c-d16a-4615-a1df-143139ebde53
+
+default.png
+file
+
+
+
+
+2014-11-04T14:41:26.000000Z
+066eb785fa0362dc158c011075160e6c
+2014-11-04T14:33:36.798002Z
+242
+gcabrera
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14903
+
+res-long-land-hdpi
+dir
+
+res-long-land-ldpi
+dir
+
+res-long-land-mdpi
+dir
+
+res-long-land-xhdpi
+dir
+
+res-long-land-xxhdpi
+dir
+
+res-long-land-xxxhdpi
+dir
+
+res-long-port-hdpi
+dir
+
+res-long-port-ldpi
+dir
+
+res-long-port-mdpi
+dir
+
+res-long-port-xhdpi
+dir
+
+res-long-port-xxhdpi
+dir
+
+res-long-port-xxxhdpi
+dir
+
+res-notlong-land-hdpi
+dir
+
+res-notlong-land-ldpi
+dir
+
+res-notlong-land-mdpi
+dir
+
+res-notlong-land-xhdpi
+dir
+
+res-notlong-land-xxhdpi
+dir
+
+res-notlong-land-xxxhdpi
+dir
+
+res-notlong-port-hdpi
+dir
+
+res-notlong-port-ldpi
+dir
+
+res-notlong-port-mdpi
+dir
+
+res-notlong-port-xhdpi
+dir
+
+res-notlong-port-xxhdpi
+dir
+
+res-notlong-port-xxxhdpi
+dir
+
