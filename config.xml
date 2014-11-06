@@ -15,6 +15,7 @@
     <icon src="res/icon/android/drawable-xhdpi/appicon.png" platform="android" density="xhdpi" />
 
     <!--splash screens-->
+    <gap:splash src="www/res/screen/android/default.png" />
     <platform name="android">
         <splash src="res/screen/android/default.png"/>
         <splash src="res/screen/android/res-notlong-port-hdpi/default.png" density="port-hdpi"/>
