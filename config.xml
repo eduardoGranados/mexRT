@@ -32,7 +32,6 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
 
-
     <name>MexRT</name>
     <description>
         Taxi Request app
@@ -53,6 +52,18 @@
     <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
     <gap:plugin name="org.apache.cordova.device-motion" />
     <gap:plugin name="org.apache.cordova.device-motion" />
+
     <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:config-file platform="ios" parent="NSLocationAlwaysUsageDescription" overwrite="false">
+        <array>
+            <string>Allow GPS at all times</string>
+        </array>
+    </gap:config-file>
+    <gap:config-file platform="ios" parent="NSLocationWhenInUseUsageDescription" overwrite="false">
+        <array>
+            <string>Allow GPS when inpixnow is in use</string>
+        </array>
+    </gap:config-file>
+
 
 </widget>

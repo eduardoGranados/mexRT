@@ -7,7 +7,7 @@ cab-found.html
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/gmwt/!svn/ver/253/CabApp/Release/www/templates/cab-found.html
+/svn/gmwt/!svn/ver/270/CabApp/Release/www/templates/cab-found.html
 END
 change-password.html
 K 25
@@ -37,7 +37,7 @@ from-address.html
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/gmwt/!svn/ver/261/CabApp/Release/www/templates/from-address.html
+/svn/gmwt/!svn/ver/269/CabApp/Release/www/templates/from-address.html
 END
 find-cab.html
 K 25

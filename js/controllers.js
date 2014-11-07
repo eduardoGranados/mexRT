@@ -234,12 +234,14 @@ angular.module('starter.controllers', ['starter.services'])
                 $state.go('home.cab-found');
             });
             $rootScope.socket.on('alert_client', function (msg) {
+
                 window.plugin.notification.local.add({
                     id:      1,
                     title:   'Taxi has Arrived',
                     message: 'Taxi no.'+msg.cabNumber+' has Arrived.'
                 });
                 $rootScope.notify('Taxi no.'+msg.cabNumber+' has Arrived.');
+
             });
 
             //$rootScope.socket.on('disconnect', function () {

@@ -11,6 +11,9 @@ angular.module('starter', ['ionic','starter.controllers', 'starter.services','gm
         },101);
 
         $ionicPlatform.ready(function() {
+
+            //init notification
+            window.plugin.notification.local.promptForPermission();
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if(window.cordova && window.cordova.plugins.Keyboard) {

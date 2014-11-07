@@ -42,8 +42,6 @@ angular.module('gmap', [])
                 };
                 $scope.onSuccess = function (position) {
 
-
-
                     $scope.current_pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
                     var mapOptions = {
@@ -164,6 +162,9 @@ angular.module('gmap', [])
                     //Second Map: mark set, no address, taxi mark -> activated when taxi found
                     $rootScope.setSecondMap = function () {
 
+                        $scope.userMarker.setMap($rootScope.map);
+                        $scope.taxiMarker.setMap($rootScope.map);
+
                         $("#displaycab-btn").css('display','block');
                         $("#findcab-btn").css('display','none');
                         $("#header-buttons").css('display','none');
@@ -194,15 +195,17 @@ angular.module('gmap', [])
                     };
 
                     $rootScope.setMainMap = function () {
+
                         $("#displaycab-btn").css('display','none');
                         $("#findcab-btn").css('display','block');
                         $("#header-buttons").css('display','block');
                         $("#address-container").css('display','block');
-                        $(".locate-btn").css('display','block');
+                        $("#not-locating").css('display','block');
                         $("#user-marker").css('display','block');
                         $("#canvas-container").css({'top': '10%','height': '83%'});
                         $("#secondMap-setter").css('display','block');
                         $("#hidemodal-btn").css('display','none');
+                        $("#btn_logout").css('display','block');
 
                         $scope.taxiMarker.setMap(null);
                         $scope.userMarker.setMap(null);
